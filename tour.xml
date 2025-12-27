@@ -1,0 +1,287 @@
+﻿<krpano version="1.23" title="">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="true"
+	               maps_type="openstreetmaps"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="true"
+	               littleplanetintro="false"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="true"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="110"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x949cef"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="7"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="1"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	<scene name="scene_000_loivao_chinhdien" title="Cổng trường" intro_url="intro/bg_music.mp3" tags="loivao_scene" onstart="" thumburl="panos/000_loivao_chinhdien.tiles/thumb.jpg" lat="12.268564" lng="109.200962" alt="" heading="" mapx="0.55" mapy="0.16">
+	
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="0.221" vlookat="-7.057" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/000_loivao_chinhdien.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/000_loivao_chinhdien.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885957394" style="skin_hotspotstyle"  tags="photo"  ath="45.409" atv="13" depth="1000.0" linkedscene="scene_008_g8_chinhdien" linkedscene_lookat="11.027,-6.616,120.0"/>
+	
+	</scene>
+
+	<scene name="scene_008_g8_chinhdien" title="Giảng đường G8" intro_url="intro/intro_g8.mp3" onstart="" tags="g8_scene" thumburl="panos/008_g8_chinhdien.tiles/thumb.jpg" lat="12.26857" lng="109.20133" alt="" heading="" mapx="0.74" mapy="0.22">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="11.027" vlookat="-6.616" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/008_g8_chinhdien.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/008_g8_chinhdien.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885947311" style="skin_hotspotstyle" tags="photo" ath="27.455" atv="16.595" depth="1000.0" linkedscene="scene_008_g8_lophoc" linkedscene_lookat="-144.0,9.06,120.0"/>
+		
+		<hotspot name="spot1885956731" style="skin_hotspotstyle" tags="photo" ath="84.612" atv="2.319" depth="1000.0" linkedscene="scene_006_g6_chinhdien" linkedscene_lookat="22.328,-4.962,120.0"/>
+		
+		<hotspot name="spot1885956873" style="skin_hotspotstyle" tags="photo" ath="-153.331" atv="7.42" depth="1000.0" linkedscene="scene_000_loivao_chinhdien" linkedscene_lookat="0.221,-7.057,120.0"/>
+
+	</scene>
+
+	<scene name="scene_008_g8_lophoc" title="Phòng học G8" intro_url="intro/intro_g8.mp3" onstart="" tags="g8_scene" thumburl="panos/008_g8_lophoc.tiles/thumb.jpg" lat="12.3456000" lng="109.20133" alt="" heading="" mapx="0.84" mapy="0.22" showonmap="true">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/008_g8_lophoc.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/008_g8_lophoc.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885947668" style="skin_hotspotstyle" tags="photo" ath="-177.978" atv="22.885" depth="1000.0" linkedscene="scene_008_g8_chinhdien" linkedscene_hoffset="0.0" use3dtransition="true"/>
+	
+	</scene>
+
+	<scene name="scene_006_g6_chinhdien" title="Giảng đường G6" tags="g6_scene" intro_url="intro/intro_g6.mp3" onstart="" thumburl="panos/006_g6_chinhdien.tiles/thumb.jpg" lat="12.267398968508472" lng="109.20089023288192" alt="" heading="" mapx="0.7" mapy="0.56">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="22.328" vlookat="-4.962" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/006_g6_chinhdien.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/006_g6_chinhdien.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885953796" style="skin_hotspotstyle" tags="photo" ath="8.015" atv="21.022" depth="1000.0" linkedscene="scene_006_g6_loivao_loidi" linkedscene_lookat="31.47,-16.77,120.0"/>
+		
+		<hotspot name="spot1885955098" style="skin_hotspotstyle" tags="photo" ath="-170.317" atv="20.722" depth="1000.0" linkedscene="scene_008_g8_chinhdien" linkedscene_hoffset="0.0" use3dtransition="true"/>
+	
+	</scene>
+
+	<scene name="scene_006_g6_loivao_loidi" title="Sân giảng đường G6" intro_url="intro/intro_g6.mp3" tags="g6_scene" onstart="" thumburl="panos/006_g6_loivao_loidi.tiles/thumb.jpg" lat="" lng="" alt="" heading="" mapx="0.6" mapy="0.65">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/006_g6_loivao_loidi.tiles/preview.jpg"/>
+		
+		<image>
+		<sphere url="panos/006_g6_loivao_loidi.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885953990" style="skin_hotspotstyle" tags="photo" ath="13.322" atv="6.191" depth="1000.0" linkedscene="scene_006_g6_lophoc" linkedscene_lookat="-48.64,3.01,120.0"/>
+		
+		<hotspot name="spot1885954704" style="skin_hotspotstyle" tags="photo" ath="86.762" atv="7.526" depth="1000.0" linkedscene="scene_006_g6_chinhdien" linkedscene_lookat="46.87,-7.03,120.0"/>
+		
+		<hotspot name="spot1885955324" style="skin_hotspotstyle" tags="photo" ath="-70.481" atv="5.118" depth="1000.0" linkedscene="scene_007_g7_chinhdien" linkedscene_hoffset="0.0" use3dtransition="true"/>
+	
+	</scene>
+
+	<scene name="scene_006_g6_lophoc" title="Phòng học G6" intro_url="intro/intro_g6.mp3" tags="g6_scene" onstart="" thumburl="panos/006_g6_lophoc.tiles/thumb.jpg" lat="" lng="" alt="" heading="" mapx="0.6" mapy="0.56">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/006_g6_lophoc.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/006_g6_lophoc.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885954364" style="skin_hotspotstyle" tags="photo" ath="-78.181" atv="24.798" depth="1000.0" linkedscene="scene_006_g6_loivao_loidi" linkedscene_lookat="43.08,-9.03,120.0"/>
+
+	</scene>
+
+	<scene name="scene_007_g7_chinhdien" title="Giảng đường G7" intro_url="intro/intro_g7.mp3" tags="g7_scene" onstart="" thumburl="panos/007_g7_chinhdien.tiles/thumb.jpg" lat="12.267555276108062" lng="109.20008880308455" alt="" heading="" mapx="0.32" mapy="0.55">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="31.093" vlookat="-16.319" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/007_g7_chinhdien.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/007_g7_chinhdien.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885946772" style="skin_hotspotstyle" tags="photo" ath="23.845" atv="8.406" depth="1000.0" linkedscene="scene_007_g7_lophoc" linkedscene_lookat="-139.28,10.24,120.0"/>
+		
+		<hotspot name="spot1885974695" style="skin_hotspotstyle" tags="photo" ath="-123.13" atv="17.211" depth="1000.0" linkedscene="scene_111_ndn_chinhdien" linkedscene_lookat="-101.393,-16.285,120.0"/>
+		
+		<hotspot name="spot1885974860" style="skin_hotspotstyle" tags="photo" ath="178.453" atv="9.274" depth="1000.0" linkedscene="scene_006_g6_loivao_loidi" linkedscene_hoffset="0.0" use3dtransition="true"/>
+	
+	</scene>
+
+	<scene name="scene_007_g7_lophoc" title="Phòng học G7" intro_url="intro/intro_g7.mp3" tags="g7_scene" onstart="" thumburl="panos/007_g7_lophoc.tiles/thumb.jpg" lat="" lng="" alt="" heading="" mapx="0.23" mapy="0.43">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/007_g7_lophoc.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/007_g7_lophoc.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885946913" style="skin_hotspotstyle" tags="photo" ath="-177.374" atv="22.498" depth="1000.0" linkedscene="scene_007_g7_chinhdien" linkedscene_hoffset="0.0" use3dtransition="true"/>
+	
+	</scene>
+
+	<scene name="scene_111_ndn_chinhdien" title="Nhà đa năng" intro_url="intro/intro_ndn.mp3" tags="ndn_scene"  onstart="" thumburl="panos/111_ndn_chinhdien.tiles/thumb.jpg" lat="12.267238139324002" lng="109.19998151472244" alt="" heading="" mapx="0.32" mapy="0.55">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="-101.393" vlookat="-16.285" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/111_ndn_chinhdien.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/111_ndn_chinhdien.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885948233" style="skin_hotspotstyle" tags="photo" ath="-121.329" atv="11.814" depth="1000.0" linkedscene="scene_111_ndn_loivao" linkedscene_lookat="-137.19,11.47,120.0"/>
+		
+		<hotspot name="spot1885950703" style="skin_hotspotstyle" tags="photo" ath="23.17" atv="28.511" depth="1000.0" linkedscene="scene_007_g7_chinhdien" linkedscene_lookat="31.039,-16.319,120.0"/>
+		
+		<hotspot name="spot1885951166" style="skin_hotspotstyle" tags="photo" ath="174.975" atv="3.817" depth="1000.0" linkedscene="scene_006_g6_loivao_loidi" linkedscene_hoffset="0.0" use3dtransition="true"/>
+	
+	</scene>
+
+	<scene name="scene_111_ndn_loivao" title="Tầng 3 - Nhà đa năng" intro_url="intro/intro_ndn.mp3" tags="ndn_scene" onstart="" thumburl="panos/111_ndn_loivao.tiles/thumb.jpg" lat="" lng="" alt="" heading="" mapx="0.18" mapy="0.56">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/111_ndn_loivao.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/111_ndn_loivao.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885948413" style="skin_hotspotstyle" tags="photo" ath="-97.592" atv="25.324" depth="1000.0" linkedscene="scene_111_ndn_lophoc" linkedscene_lookat="-69.92,-1.22,120.0"/>
+		
+		<hotspot name="spot1885949181" style="skin_hotspotstyle" tags="photo" ath="-179.729" atv="11.526" depth="1000.0" linkedscene="scene_111_ndn_vanphongkhoa" linkedscene_lookat="-52.0,-0.3,120.0"/>
+		
+		<hotspot name="spot1885950045" style="skin_hotspotstyle" tags="photo" ath="8.377" atv="27.553" depth="1000.0" linkedscene="scene_111_ndn_chinhdien" linkedscene_lookat="-101.39,-16.29,120.0"/>
+	
+	</scene>
+
+	<scene name="scene_111_ndn_lophoc" title="Phòng thực hành" intro_url="intro/intro_ndn.mp3" tags="ndn_scene" onstart="" thumburl="panos/111_ndn_lophoc.tiles/thumb.jpg" lat="" lng="" alt="" heading="" mapx="0.21" mapy="0.56">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/111_ndn_lophoc.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/111_ndn_lophoc.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885948810" style="skin_hotspotstyle" tags="photo" ath="-107.257" atv="27.215" depth="1000.0" linkedscene="scene_111_ndn_loivao" linkedscene_lookat="212.17,4.97,120.0"/>
+	
+	</scene>
+
+	<scene name="scene_111_ndn_vanphongkhoa" title="Văn phòng Khoa" intro_url="intro/intro_ndn.mp3" tags="ndn_scene" onstart="" thumburl="panos/111_ndn_vanphongkhoa.tiles/thumb.jpg" lat="" lng="" alt="" heading="" mapx="0.15" mapy="0.56">
+		
+		<control bouncinglimits="calc:image.cube ? true : false"/>
+		
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+		
+		<preview url="panos/111_ndn_vanphongkhoa.tiles/preview.jpg"/>
+		
+		<image>
+			<sphere url="panos/111_ndn_vanphongkhoa.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1280x640,2560x1280"/>
+		</image>
+		
+		<hotspot name="spot1885949663" style="skin_hotspotstyle" tags="photo" ath="-80.952" atv="17.473" depth="1000.0" linkedscene="scene_111_ndn_loivao" linkedscene_lookat="-143.11,13.51,120.0"/>
+		
+	</scene>
+
+</krpano>

@@ -29,42 +29,42 @@
     <layer name="skin_control_bar" type="container" align="bottomright" width="44" height="400" x="5" y="5" keep="true" zorder="100" bgcolor="0x00ff00" bgalpha="1">
             <!-- ===== TOGGLE BUTTON ===== -->
         <layer name="btn_hide_container" type="container" align="bottom" width="44" height="44" y="0" zorder="101" bgcolor="0xff0000" bgalpha="1">
-            <layer name="bg_hide" type="container" align="bottomright" width="40" height="40" bgcolor="0x44B5E8" bgalpha="0.45" bgroundedge="20" bgcapture="true" handcursor="true" onclick="toggle_control_buttons();">
+            <layer name="bg_hide" type="container" align="bottomright" width="40" height="40" bgcolor="0x44B5E8" bgalpha="0.45" bgroundedge="20" bgcapture="true" handcursor="true" onclick="toggle_control_buttons();" onhover="skin_showtooltip_menu('Ẩn/Hiện Menu');" onout="skin_hidetooltips();">
                 <layer name="icon_hide" url="/skin/icons/hide.png" align="center" width="45" height="45" scale="0.5" rotate="90" capture="false" />
             </layer>
         </layer>
             <!-- ===== BUTTONS GROUP ===== -->
         <layer name="buttons_group" type="container" align="bottom" y="44" width="44" height="350" visible="false" alpha="1.0" zorder="100" bgcolor="0x0000ff" bgalpha="1">  
             
-            <layer name="btn_full_screen" type="container" align="bottomright" width="40" height="40" y="0" bgcolor="0xFF5733" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="toggle_fullscreen();">
+            <layer name="btn_full_screen" type="container" align="bottomright" width="40" height="40" y="0" bgcolor="0xFF5733" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="toggle_fullscreen();" onhover="skin_showtooltip_menu('Bật/Tắt toàn màn hình');" onout="skin_hidetooltips();">
                 <layer name="icon_full_screen" url="/skin/icons/fullscreen.png" align="center" width="45" height="45" scale="0.5" capture="false" />
             </layer>
 
-            <layer name="btn_auto" type="container" align="bottomright" width="40" height="40" y="44" bgcolor="0xC70039" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="toggle_autorotate();">
+            <layer name="btn_auto" type="container" align="bottomright" width="40" height="40" y="44" bgcolor="0xC70039" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="toggle_autorotate();" onhover="skin_showtooltip_menu('Bật/Tắt tự xoay');" onout="skin_hidetooltips();">
                 <layer name="icon_auto" url="/skin/icons/auto.png" align="center" width="45" height="45" scale="0.5" capture="false" />
             </layer>
 
-            <layer name="btn_camera" type="container" align="bottomright" width="40" height="40" y="88" bgcolor="0x900C3F" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="trace('Đã bấm nút 3')">
+            <layer name="btn_camera" type="container" align="bottomright" width="40" height="40" y="88" bgcolor="0x900C3F" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="trace('Đã bấm nút 3')" onhover="skin_showtooltip_menu('Chụp hình');" onout="skin_hidetooltips();">
                 <layer name="icon_camera" url="/skin/icons/camera.png" align="center" width="45" height="45" scale="0.5" capture="false" />
             </layer>
 
-            <layer name="btn_vr" type="container" align="bottomright" width="40" height="40" y="132" bgcolor="0x581845" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="webvr.enterVR();">
+            <layer name="btn_vr" type="container" align="bottomright" width="40" height="40" y="132" bgcolor="0x581845" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="webvr.enterVR();" onhover="skin_showtooltip_menu('Thực tế ảo');" onout="skin_hidetooltips();">
                 <layer name="icon_vr" url="/skin/icons/vr.png" align="center" width="45" height="45" scale="0.5" capture="false" />
             </layer>
 
-            <layer name="btn_360" type="container" align="bottomright" width="40" height="40" y="176" bgcolor="0x28B463" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="view_360_action();">
+            <layer name="btn_360" type="container" align="bottomright" width="40" height="40" y="176" bgcolor="0x28B463" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="view_360_action();" onhover="skin_showtooltip_menu('Toàn cảnh');" onout="skin_hidetooltips();">
                 <layer name="icon_360" url="/skin/icons/360.png" align="center" width="45" height="45" scale="0.5" capture="false" />
             </layer>
 
-            <layer name="btn_menu" type="container" align="bottomright" width="40" height="40" y="220" bgcolor="0xD4AC0D" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="skin_showthumbs();">
+            <layer name="btn_menu" type="container" align="bottomright" width="40" height="40" y="220" bgcolor="0xD4AC0D" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="skin_showthumbs();" onhover="skin_showtooltip_menu('Album ảnh');" onout="skin_hidetooltips();">
                 <layer name="icon_menu" url="/skin/icons/menu.png" align="center" width="45" height="45" scale="0.5" capture="false" />
             </layer>
 
-            <layer name="btn_view" type="container" align="bottomright" width="40" height="40" y="264" bgcolor="0x2E86C1" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="start_vr();">
+            <layer name="btn_view" type="container" align="bottomright" width="40" height="40" y="264" bgcolor="0x2E86C1" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="start_vr();" onhover="skin_showtooltip_menu('Tổng quan địa điểm');" onout="skin_hidetooltips();">
                 <layer name="icon_view" url="/skin/icons/view.png" align="center" width="45" height="45" scale="0.5" capture="false" />
             </layer>
 
-            <layer name="btn_prev" type="container" align="bottomright" width="40" height="40" y="308" bgcolor="0x884EA0" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="trace('Đã bấm nút 8')">
+            <layer name="btn_prev" type="container" align="bottomright" width="40" height="40" y="308" bgcolor="0x884EA0" bgalpha="1" bgroundedge="20" bgcapture="true" handcursor="true" onclick="trace('Đã bấm nút 8')" onhover="skin_showtooltip_menu('Trở lại ảnh trước');" onout="skin_hidetooltips();">
                 <layer name="icon_prev" url="/skin/icons/prev.png" align="center" width="45" height="45" scale="0.5" capture="false" />
             </layer> 
         </layer> <!-- END buttons_group -->

@@ -520,56 +520,35 @@
 	<!-- use depthbuffer for hotspots rendering -->
 	<display depthbuffer="true" />
 	
-	<!-- a background grid -->
-	<!-- <preview type="grid" />
-<style name="hittesttextfield"
-	type="text" textalign="center"
-	bgcolor="0x7777DD" bgalpha="0.8" bgborder="1 0x000000 1.0" oversampling="1"
-	zorder="1" depthbuffer="true"
-	/>
-<hotspot name="thumb_wall"
-         style="hittesttextfield"
-         ath="0"
-         atv="0"
-         width="800"
-         height="500"
-         visible="true"
-         zorder="10"
-         distorted="true"
-         depth="1000"
-         keep="true"
-         background="true"
-         bgcolor="0xFFFFFF"
-         bgalpha="0.3" />
-
-<hotspot name="close_button_wall"
-         type="image"
-         url="icons/close.png"
-         ath="0"
-         atv="0"
-         ox="380"
-         oy="-230"
-         scale="1"
-		 width="32"
-		 height="32"
-         distorted="true"
-         handcursor="true"
-         zorder="11"
-         depth="1001"
-         keep="true"
-         onclick="hide_all_thumbs();" /> -->
 
 	<!-- the tooltip textfield -->
 	<layer name="skin_tooltip" keep="true"
-	       type="text"
-	       parent="STAGE"
-	       visible="false" alpha="0" enabled="false" zorder="2"
-	       align="lefttop" edge="bottom" oy="-2" width="200"
-	       bgalpha="0.0"
-	       txtshadow="get:skin_settings.design_text_txtshadow"
-	       css="calc:skin_settings.design_text_css + ' text-align:center; font-size:16px;'"	
-	       html=""
-	       />
+       type="text"
+       parent="STAGE"
+       visible="false" alpha="0" enabled="false" zorder="2"
+       align="lefttop" 
+       edge="right"         ox="-10"             oy="0" 
+       width="auto"         bg="true"            bgcolor="0x000000" bgalpha="0.6" bgroundedge="5"
+       txtshadow="get:skin_settings.design_text_txtshadow"
+       css="calc:skin_settings.design_text_css + ' text-align:center; font-size:14px; padding:2px 8px;'"
+       html=""
+       />
+	<!--Vì tooltip này dùng parent="STAGE", nó cần được gán tọa độ X, Y theo vị trí chuột mỗi khi bạn rê vào nút. Bạn cần thêm action này vào file:-->
+	   <action name="skin_showtooltip_menu">
+    set(layer[skin_tooltip].html, %1);
+    
+    copy(layer[skin_tooltip].x, mouse.x);
+    copy(layer[skin_tooltip].y, mouse.y);
+    
+    set(layer[skin_tooltip].visible, true);
+    tween(layer[skin_tooltip].alpha, 1.0, 0.1);
+    
+    asyncloop(hovering, 
+        copy(layer[skin_tooltip].x, mouse.x);
+        copy(layer[skin_tooltip].y, mouse.y);
+    );
+	</action>
+
 
 
 	<!-- skin layout -->

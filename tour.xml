@@ -2,6 +2,7 @@
 
 	<include url="skin/vtourskin.xml" />
 
+	<include url="skin/right_menu.xml"/>
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="true"
 	               maps_type="openstreetmaps"

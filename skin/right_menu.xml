@@ -112,10 +112,8 @@
     <action name="toggle_autorotate">
         if(autorotate.enabled,
             set(autorotate.enabled,false);
-            skin_showtooltip_menu('Dừng tự xoay');
         ,
             set(autorotate.enabled,true);
-            skin_showtooltip_menu('Tự xoay');
         );
         update_auto_icon();
     </action>
